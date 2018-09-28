@@ -1,0 +1,407 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #D5EEB4;
+	max-width: 100%;
+}
+
+.wrapper{
+	width: 63.8%;
+	height: 600px;
+		max-width: 100%;
+	background-color: #eee;
+	/*margin: 0 auto;*/
+	/*margin-top: 70px;*/
+	padding: 5px 0 0 20px;
+	border-radius: 10px;
+	position: relative;
+	top: 70px;
+	left: 300px;
+  }
+.img img{
+	width: 100%;
+	max-width: 99%;
+	min-width: 20%;
+	border-radius: 10px;
+	border: 2px solid #ccc;
+}
+.barby{
+	width: 504px;
+	height: 595px;
+	max-width: 95%;
+	background-color: #fff;
+	border-radius: 10px;
+	float: left;
+}
+h2{
+	margin-left: 10px;
+	font: bold italic 1.2vw Verdana;
+	color: #F033AD;
+
+}
+.opys{
+	padding: 3px;
+	text-indent: 10px;
+}
+.opys p{
+	font: italic 13px Verdana; 
+	text-indent: 1vw;
+	color: #572974;
+}
+.info{
+	width: 445px;
+	height: 595px;
+	max-width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	float: right;
+	margin-right: 20px;
+}
+h3{
+	color:#F033AD;
+	text-align: center;
+	margin-top: 0.5em; 
+		margin-bottom: 10px;
+}
+.info .infofo{
+	width: 200px;
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	margin: 2px 2px 2px 15px;
+	background-color: #eee;
+}
+.info_sidebar{
+	width: 220px;
+	height: 305px;
+	float: left;
+	display: inline-block;
+}
+.info_sidebar_right{
+	width: 220px;
+	height: 305px;
+	float: right;
+}
+.info2 div{
+	width: 200px;
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	margin: 2px;
+	background-color: #D5EEB4;
+
+}
+.info2{
+	width: 200px;
+	height: 300px;
+		max-width: 100%;
+	border-radius: 10px;
+	float: right;
+	margin-right: 20px;
+
+}
+.info_sidebar p {
+	text-indent: 10px;
+	color: #572974;
+	font: italic 14px Verdana;
+	line-height: 3em;
+}
+.info2 p{
+	margin-left: 10px;
+	color: #572974;
+	font: italic 14px Verdana;
+	line-height: 3em;
+}
+.info2 p i{
+	 color: #FFf;
+}
+.check #check { 
+	color: green;
+}
+.info2 span{
+	margin-left: 10px;
+	color: red;
+}
+.info2 input{
+	width: 30px;
+	margin: 15px 0 0 5px;
+}
+.corzina{
+	background-color: #A7E876;
+	width: 120px;
+	height: 30px;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	margin-top: 10px;
+	float: right;
+	cursor: pointer;
+}
+.corzina:hover{
+	border: 1px solid #aaa;
+	background-color: #eee;
+	color: #572974;
+}
+.corzina i{
+	margin-left: 10px;
+
+}
+.corzina:hover i{
+	color: green;
+}
+.comen{
+	width: 440px;
+	height: 235px;
+	max-width: 100%;
+	position: relative;
+	padding: 2px;
+	background-image: url(../../images/fon.png);
+}
+.text{
+	width: 130px;
+	height: 24px;
+	margin-left: 14px;
+		border-radius: 10px;
+		background-color: #87C1C8;
+		margin-top: 5px;
+		padding: 4px;
+		border: none;
+	float: left;
+	display: inline-block;
+	color: #fff;
+}
+.text p{
+	line-height: 1.5em;
+	text-indent: 5px;
+	font-size: 17px;
+	
+}
+.text:hover{
+	border: 1px solid #aaa;
+	background-color: #eee;
+	color: #572974;
+	margin-left: 13px;
+	margin-top: 4px;
+}
+.coment{
+	width: 410px;
+	height: 150px;
+		max-width: 100%;
+	background-color: #eee;
+	position: absolute;
+	top:40px;
+	left: 15px;
+	visibility: hidden;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+.coment form textarea{
+	width: 320px;
+	height: 110px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 30px;
+	outline: none;
+	border-radius: 7px;
+	font: italic 14px Verdana;
+	color: #572974;
+}
+.coment button{
+	width: 120px;
+	height: 30px;
+	background-color: #A7E876;
+	border: none;
+	border-radius: 7px;
+	outline: none;
+	position: absolute;
+	top: 153px;
+	left: 290px;
+	cursor: pointer;
+}
+.text:hover .coment{
+	visibility: visible;
+}
+.clear{
+	clear: both;
+}
+.text2{
+	width: 130px;
+	height: 24px;
+	margin-right: 15px;
+		border-radius: 10px;
+		background-color: #87C1C8;
+		margin-top: 5px;
+		padding: 4px;
+		border: none;
+	float: right;
+	display: inline-block;
+		color: #fff;
+}
+.coment2{
+	width: 410px;
+	height: 150px;
+		max-width: 100%;
+	background-color: #D5EEB4;
+	position: absolute;
+	top:40px;
+	left: 15px;
+	visibility: hidden;
+	border: 2px solid #A7E876;
+	border-radius: 5px;
+}
+.coment2 form textarea{
+	width: 320px;
+	height: 110px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 30px;
+	outline: none;
+	border-radius: 7px;
+	font: italic 14px Verdana;
+	color: #572974;
+}
+.coment2 button{
+	width: 120px;
+	height: 30px;
+	background-color: #A7E876;
+	border: none;
+	border-radius: 7px;
+	outline: none;
+	position: absolute;
+	top: 153px;
+	cursor: pointer;
+}
+.text2:hover .coment2{
+	visibility: visible;
+}
+.Sht{
+	font-size: 10px;
+}
+.text2:hover{
+	border: 1px solid #aaa;
+	background-color: #eee;
+	color: #572974;
+	margin-right: 12px;
+	margin-top: 4px;
+}
+.text2 p{
+	line-height: 1.5em;
+	text-indent: 10px;
+	font-size: 17px;
+	
+}
+/*.back{
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 50%;
+	position: absolute;
+	left: -100px;
+}
+.back i{
+	color: #87C1C8;
+	font-size: 30px;
+	margin-left: 17px;
+	margin-top: 15px;
+}*/
+/*.back:hover{
+	border-color: #fff;
+	background-color: #A7E876;
+}
+.back:hover i{
+	color: #fff;
+}*/
+
+.back{
+	position: absolute;
+	left: -150px;
+}
+.pulse{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: lightblue;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+
+}
+.pulse i{
+	transition: 0.6s ease-in-out;
+	color: #fff;
+	font-size: 45px;
+
+}
+.pulse:hover i{
+	transition: 0.6s ease-in-out;
+	transform: scale(0);
+
+}
+.text_{
+	font-size: 18px;
+	position: absolute;
+	top: 34px;
+	left: 16px;
+	text-transform: uppercase;
+	transform: scaleX(-1);
+	transition: 0.6s ease-in-out;
+	opacity: 0;
+}
+.text_ a{
+		text-decoration: none;
+		color: #fff;
+}
+.pulse:hover .text_{
+	transform: scaleX(1);
+	transition: 0.6s ease-in-out;
+	opacity: 1;
+	color: #fff;
+}
+.pulse:hover::before,  /*с помощю :hover делаем этот эфект по наведению*/
+.pulse:hover::after{   /*второй пульс. элемент*/
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	border: 1.5px solid #fff;
+	border-radius: 50%;
+	animation: pulse 1.8s linear infinite;
+	opacity: 0;  									/*чтоб вначале этот эфект скрыть*/
+}
+.pulse:hover::after{    /*чтоб его увидеть отдельно для него делаем задержку пол секунды*/
+	animation-delay: .5s ;
+}
+.arrow{
+	width: 90px;
+	height: 90px;
+	font-size: 50px;
+	line-height: 90px;
+	position: absolute;
+	top: -3px; 
+	animation: arrow .9s ease-in-out infinite;
+ }
+ @keyframes arrow{
+ 	0%, 100%{
+		transform: rotate(-20deg);
+ 	}
+ 	50%{
+		transform: rotate(21deg);
+ 	}
+
+ }
+  @keyframes pulse{
+  	0%{
+  		transform: scale(0.5);
+  		opacity: 0;
+  	}
+  	50%{
+  		opacity: 1;
+  	}
+  	100%{
+  		transform: scale(1.5);
+  		opacity: 0;
+  	}
+  }

@@ -1,0 +1,568 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #0E0E0E;
+}
+.wrap{
+	width: 1120px;
+	height: 760px;
+	background: red;
+	margin: 0 auto;
+}
+header{
+	width: 1120px;
+	height: 75px;
+	background: green;
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	flex-direction: row;
+}
+.div1{
+	width: 305px;
+	height: 75px;
+	background: #242A31;
+}
+.search{
+	width: 250px;
+	height: 33px;
+	background: #363D45;
+	border-radius: 20px;
+	margin: 18px 24px;
+	position: relative;
+}
+.div1 input{
+	width: 200px;
+	border: none;
+	background: #363D45;
+	outline: none;
+	padding: 2px;
+	position: absolute;
+	top: 6px;
+	left: 30px;
+	color: white;
+}
+.div1 button{
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	color: white;
+	background: none;
+	border: none;
+	outline: none;
+}
+.div2{
+	width: 325px;
+	height: 75px;
+ 	background-color: #EDEFF3;
+ 	border-right: 1px solid #ccc;
+}
+.div2 p{
+	line-height: 70px;
+	margin-left: 12px;
+	
+}
+.div2 p span{
+	font-size: 80%;
+	margin-left: 5px;
+	color: #80858B;
+}
+.div3{
+	width: 78.7px;
+	height: 75px;
+	background-color:#EDEFF3;
+	border-right: 1px solid #ccc; 
+	text-align: center;
+}
+.div3 i{
+	font-size: 20px;
+	line-height: 70px;
+	color: #80858B;
+}
+.div6{
+	width: 250px;
+	height: 75px;
+	background-color: #fff;
+	position: relative;
+}
+.div6 .alaram i{
+	font-size: 20px;
+	line-height: 70px;
+	color: #80858B;
+	margin-left: 30px;
+
+}
+.div6 .user{
+	margin-left: 70px;
+	font: normal 12px Verdana;
+	color: #80858B;
+}
+.div6 .circle i{
+	font-size: 8px;
+	color: #0084FF;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+.div6 .caret i{
+	font-size: 13px;
+	color: #0084FF;
+	position: absolute;
+	left: 227px;
+	top: 30.5px;
+}
+.left{
+	width: 305px;
+	height: 684px;
+	background: #242A31;
+	float: left;
+}
+.left .userLogo{
+	width: 295px;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	color: #ccc;
+	border-left: 2px solid #242A31;
+}
+.left .userName{
+	width: 164px;
+	height: 80px;
+	margin-left: 20px;
+}
+.left .userName .name{
+	margin-top: 20px;
+	font: bold  14px Tahoma;
+	color: #fff;
+}
+.left .userName .massege{
+	font: bold 11px Tahoma;
+}
+.left .userTime{
+	width: 50px;
+	height: 80px;
+	margin-right: 5px;
+}
+.left .userTime .buter, .timing {
+	text-align: right;
+}
+.left .userTime .buter{
+	margin-top: 15px;
+}
+.left .userTime .timing {
+	font: bold 10px Tahoma;
+	margin-top: 5px;
+}
+
+.left .userLogo:hover{
+	border-left: 2px solid #0084FF;
+	background-color: #363D45;
+}
+.left .userLogo:hover .userImg i{
+	color: #0084FF;
+}
+.left .userLogo .userImg img{
+	border-radius: 50%;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.userImg {
+	position: relative;
+}
+.userImg i{
+	position: absolute;
+	font-size: 7px;
+	top: 10px;
+	left: 10px;
+	color: #2DC400;
+}
+
+.center{
+	width: 564px;
+	height: 680px;
+	background-color:#EDEFF3;
+	float: left;
+	border-right: 1px solid #ccc;
+
+}
+.message_1{
+	width: 565px;
+	height: 50px;
+	margin-top: 8px;
+}
+.message_1 img, .message_2 img, .message_4 img{
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+	margin-left: 20px;
+	margin-top: 7px;
+}
+.message_1 em{
+	font-size: 10px;
+	color: #000;
+	margin-left: 25px;
+	display: block;
+
+}
+.MessageImg{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	float: left;
+}
+.userMessage{
+	width: 250px;
+	height: 45px;
+	float: left;
+	background-color: #fff;
+	margin-left: 25px;
+	margin-top: 2px;
+	border-radius: 5px;
+	position: relative;
+}
+.userMessage p{
+	margin-left: 10px;
+	color: #AAAAAA;
+	margin-top: 10px;
+}
+.message_1 .userMessage::before{
+  content: "";
+  position: absolute;
+  border:5px  solid;
+  border-color:  transparent white transparent transparent ;
+  display: block;
+  left: -10px;
+  top: 10%; 
+}
+.message_2{
+	width: 565px;
+	height: 80px;
+	margin-top: 8px;
+}
+.message_2 .MessageImg em{
+	font-size: 10px;
+	 color: #000;
+	margin-left: 25px;
+}
+.message_2 .userMessage{
+	width: 350px;
+	height: 57px;
+	float: left;
+	background-color: #fff;
+	margin-left: 25px; 
+	border-radius: 5px;
+	padding: 5px;
+}
+.message_2 .userMessage p{
+	line-height: 10px;
+}
+.message_3{
+	width: 565px;
+	height: 50px;
+}
+.message_3  .MessageImg{
+	width: 60px;
+	height: 50px;
+	display: inline-block;
+	float: right;
+}
+.message_3 img {
+	border-radius: 50%;
+	width: 60%;
+	height: 33px;
+	margin-top: 1px;
+	margin-right: 20px;
+	float: right;
+}
+.message_3 .MessageImg em{
+	font-size: 10px;
+	color: #000;
+	text-align: right;
+	margin-left: 11px;
+}
+.message_3 .userMessage{
+	width: 250px;
+	height: 41px;
+	float: right;
+	background-color: #0084FF;
+	margin-right: 15px;
+	border-radius: 5px;
+	line-height: 18px;
+}
+.message_3 .userMessage p{
+	color: #fff;
+}
+.message_4{
+	width: 565px;
+	height: 115px;
+	margin-top: 3px;
+}
+.message_4 em{
+	font-size: 10px;
+	color: #000;
+	margin-left: 25px;
+}
+.message_4 .userMessage{
+	width: 410px;
+	height: 103px;
+	float: left;
+	background-color: #fff;
+	margin-left: 25px;
+	margin-top: 1px;
+	border-radius: 5px;
+	padding: 2px;
+}
+.message_4 .userMessage p{
+	line-height: 10px;
+}
+.message_5{
+	width: 565px;
+	height: 50px;
+}
+.message_5 .MessageImg{
+	width: 60px;
+	height: 50px;
+	display: inline-block;
+	float: right;
+}
+.message_5 img {
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+	margin-top: 1px;
+	margin-right: 20px;
+	float: right;
+}
+.message_5 .MessageImg em{
+	font-size: 10px;
+	color: #000;
+	text-align: right;
+	margin-left: 11px;
+}
+.message_5 .userMessage{
+	width: 360px;
+	height: 41px;
+	float: right;
+	background-color: #0084FF;
+	margin-right: 15px;
+	border-radius: 5px;
+	line-height: 18px;
+}
+.message_5 .userMessage p{
+	color: #fff;
+}
+.message_6{
+	width: 565px;
+	height: 180px;
+	margin-top: 2px;
+}
+.message_6 .MessageImg{
+	width: 60px;
+	height: 50px;
+	display: inline-block;
+	float: right;
+	margin-top: 6px;
+}
+.message_6 .MessageImg img {
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+	margin-top: 1px;
+	margin-right: 20px;
+	float: right;
+}
+.message_6 .MessageImg em{
+	font-size: 10px;
+	color: #000;
+	margin-left: 11px;
+	
+}
+.message_6 .userMessage{
+	width: 360px;
+	height: 200px;
+	float: right;
+	background-color: #0084FF;
+	margin-right: 15px;
+	border-radius: 5px;
+	line-height: 18px;
+}
+.message_6 .userMessage p{
+	color: #fff;
+}
+.audio{
+	width: 150px;
+	height: 200px;
+	display: inline-block;
+	float: left;
+}
+.message_6 .userMessage .audio img{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.message_6 .userMessage .audio audio{
+	width:330px;
+	height: 20px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.opys{
+	width: 180px;
+	height: 168px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.star{
+	color: #FFDD00;
+}
+.opys .starRaiting em{
+	font-size: 10px;
+	margin-left: 5px;
+}
+.opys .prise{
+	display: block;
+	width: 150px;
+	height:30px;
+	margin-top: 20px;
+	background-color: blue;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	color: #fff;
+}
+
+footer{
+	width: 564px;
+	height: 79px;
+	background-color: #FBFBFC;
+	position: absolute;
+	top: 680px;
+	border-right: 1px solid #ccc;
+	border-top:  1px solid #ccc;
+}
+.paperclips{
+	width: 40px;
+	height: 60px;
+	font-size: 25px;
+	color: #616D7A;
+	margin-left: 20px;
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+.paperclips i{
+	color: #616D7A;
+	margin-top: 15px;
+}
+footer .TypeMassege{
+	width: 390px;
+	height: 60px;
+	font-size: 14px;
+	margin-left: 2px;
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+.TypeMassege p{
+	color: #616D7A;
+	margin-top: 20px;
+}
+.smile{
+	width: 50px;
+	height: 60px;
+	margin-top: 10px;
+	font-size: 20px;
+	color: #616D7A;
+	display: inline-block;
+	float: left;
+	margin-left: 5px;                 
+}
+.smile i{
+	color: #616D7A;
+	margin-top: 25px;
+	margin-left: 15px;
+}
+.paper{
+	width: 35px;
+	height: 35px;
+	margin-top: 25px;
+	font-size: 20px;
+	color: #616D7A;
+	display: inline-block;
+	float: left;
+	margin-left: 5px;
+	border-radius: 50%; 
+	background-color: #616D7A; 
+
+}
+.paper i{
+	color: #fff;
+	margin-top: 8px;
+	margin-left: 6px;
+}
+.right{
+	width: 250px;
+	height: 684px;
+	background-color: #FFFFFF;
+	float: left;
+
+}
+.USER{
+	width: 250px;
+	height: 220px;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	background-color: #EDEFF3;
+}
+.USERfoto img{
+	border-radius: 50%;
+	margin-left: 60px;
+	margin-top: 20px;
+	border: 0.5px solid #ccc;
+
+}
+.Marge{
+	margin-left: 55px;
+	color: #000;
+	font: bold normal 16px Tahoma;
+}
+.messener{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+.ellipsis{
+	position: absolute;
+	top: 12px;
+	left: 215px;
+}
+.citi{
+	margin-left: 82px;
+	color: #616D7A;
+	font: bold normal 10px Tahoma;
+}
+.USERnick{
+	width: 210px;
+	height: 55px;
+	margin-left: 20px;
+	border-bottom: 1px solid #ccc;
+
+}
+.USERnick p{
+	margin-left: 10px;
+	font: bold normal 12px Tahoma;
+	color: #616D7A;
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+}
+.value{
+	font-size: 12px;
+	text-align: right;
+	float: right;
+	color: #616D7A; 
+	margin-right: 5px;
+	line-height: 50px;
+}

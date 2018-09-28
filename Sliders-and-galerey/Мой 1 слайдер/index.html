@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="описание сайта">
+	<meta name="keywords" content="ключевые слова">	
+	<meta name="viewprt" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="mainCSS.css"> -->
+	<!-- <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css"> -->
+     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+ <!--    <script type="text/javascript" src="main.js" defer></script>
+    <script src="https://use.fontawesome.com/1e36bfaeb4.js"></script>  -->
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.menu{
+			width:810px;
+			height: 200px;
+			background-color:#ccc;
+			margin:12px auto;
+			overflow: hidden;
+		}
+		.slider .menu ol{
+			width:  2160px;
+			height: 200px;
+			transition: margin-left 500ms;
+		}
+		.menu ol li{
+			list-style:none;
+			float:left;
+			display: inline-block;
+
+		}
+		.slider{
+			width: 1000px;
+			height: 230px;
+			background-color: #cee;
+			margin: 75px auto;
+			border:1px solid #aaa;
+			border-radius:10px;
+			/*overflow: hidden;*/
+
+		}
+		.slider .but-left{
+			float: left;
+			margin-top:10%;
+		}
+		.slider .but-right{
+			float:right;
+			margin-top:10%;
+		}
+	</style>
+</head>
+<body>
+<div class="slider">	
+	<button class="but-left">&#x25c0</button>
+		<button class="but-right">&#x25ba</button>
+		
+			<div class="menu">
+
+			<ol>
+				<li><img src="images/fancy-cars.jpg" width="270" height="200"></li>
+				<li><img src="images/ferrari%20gto.jpg" width="270" height="200"></li>
+				<li><img src="images/ferrari%20p4.jpg" width="270" height="200"></li>
+				<li><img src="images/ferrari.jpg" width="270" height="200"></li>
+				<li><img src="images/hqdefault.jpg" width="270" height="200"></li>
+				<li><img src="images/jaguar.jpg" width="270" height="200"></li>
+				<li><img src="images/maybach.jpg" width="270" height="200"></li>
+				<li><img src="images/mercedes.jpg" width="270" height="200"></li>
+			</ol>
+
+
+	</div>
+
+</div>
+
+<script>
+	
+	let ol = document.querySelector("ol");
+	let buttonLeft = document.querySelector(".but-left")
+	let buttonRight = document.querySelector(".but-right")
+	let count = 1; 
+	let width = 270;
+	let position = 0;
+
+	buttonLeft.onclick = function(){
+	 position = Math.min(position + width * count, 0)
+      ol.style.marginLeft = position + 'px';
+
+	}
+
+		buttonRight.onclick = function(){
+       position = Math.max(position - width * count, -1350);
+       ol.style.marginLeft = position + 'px';
+	}
+
+</script>
+
+
+
+</body>
+</html>

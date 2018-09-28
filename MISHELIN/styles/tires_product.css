@@ -1,0 +1,130 @@
+
+
+											/*TIres Product*/
+	.tiresProduct{
+		width: 86%;
+		height: 37.3%;
+		background: url(../images/triangle.png) no-repeat, url(../images/greyFon.png) no-repeat;
+		background-position: top;
+	}
+		.tiresProduct img{
+			max-width: 80% ;
+		}
+		.tiresProduct h3{
+			margin: 6% 0 0 12.3%;
+			color: #4D4D4D;
+		}
+			.tiresProduct h3 span{
+				color:#6EB120;
+			}
+		.tiresProduct .container{
+			width: 77%;
+			height: 82.1%;
+			margin:0 auto;
+		}
+		.tiresProduct .container .tires{
+			width: 31.5%;
+			height: 47%;
+			background-color: #fff;
+			float: left; 
+			margin: 2% 1% 0 0.8%;
+			border-radius: 7px;
+			position: relative;
+			border: 1px solid #ccc;	
+		}
+			.tires .tiresImg{
+				margin-left: 15%;
+			} 
+			.tires .tires_caption{
+				font: bold 1em "Roboto", sans-serif;
+				padding: 10px;
+				margin-left: 4px;
+			}
+			    .ADAC{
+			    	width: 33%;
+					position: absolute;
+					border-top-right-radius: 6px;
+					left: 67%;
+					top: 0;
+				}
+				.Image_Eco{
+					width: 10%;
+					position: absolute;
+					border-top-right-radius: 6px;
+					left: 86%;
+					top: 0;
+				}
+			.tires .tiresPrise{
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				height: 7%;
+			}	
+				.type{
+					border-right: 1.5px solid #aaa;
+				}
+				.type, .tiresSize{
+					width: 33%;
+					padding: 1% 4%;
+					background-color: #eee;
+					font: bold 0.95em "Roboto", sans-serif;
+					color: #4D4D4D;
+				}
+				.Prise{
+					padding-left: 0.3vw;
+					font: bold 1.5vw "Roboto", sans-serif;
+					color: #6EB120;
+				}
+				.tiresPrise span{
+					display: block;
+					margin: 4% 2%;
+					font: normal 0.8vw "Roboto", sans-serif;
+					color: #6EB120;
+				}
+			.tires .tires_buy{
+				width: 19.6vw;
+				height: 2.13vw;
+				display: flex;
+				flex-direction: row;				
+			}
+				.tires .tires_buy p{
+					font: bold 0.8em "Roboto", sans-serif;
+					color: #3E6CE0;
+					padding: 3% 2% 0 6%;
+				}
+				.tires .tires_buy i{
+					display: inline-block;
+					color:#3E6CE0;
+					margin-top: 4%;
+				}
+				.clear{
+					width: 34%;
+				}
+				.tires_buy button{
+					display: inline-block;
+					background-color:#6EB120; 
+					width: 33.5%;
+					height: 96%;
+					/*margin: 0 0 0 34%;*/
+					font: bold 1vw "Roboto", sans-serif;
+					letter-spacing: 2px;
+					border: none;
+					border-radius: 6px;
+					outline: none;
+					color: #fff;
+				}
+				.tires_buy button:hover{
+					background-color:#eee;
+					color:#6EB120;
+				}
+				.tiresProduct_bottomParagraf{
+					font: normal 0.9vw "Roboto", sans-serif;
+					text-align: center;
+					margin-top: 1.3%;
+				}
+				.tiresProduct_blueParagraf{
+					text-align: center;
+					color: #3E6CE0;
+					font: bold 0.9vw "Roboto", sans-serif;
+					margin-top: 0.4%;
+				}

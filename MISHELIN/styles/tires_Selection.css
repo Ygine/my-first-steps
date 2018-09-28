@@ -1,0 +1,198 @@
+				
+						/*TIRES SELECTION BEGIN */
+
+	.tiresSelection{
+		width: 65%;
+		height: 430px;
+		display: flex;
+		flex-direction: column;
+	}
+		.tiresSelection h2{
+			display: none;
+		}
+		.AutoClassCaption{
+			width: 100%;
+			height: 15%;
+			display: flex;
+			flex-direction: row;
+		}
+			.AutoClassCaption .choiceClass{
+				margin-top: 10px;
+				color:#4D4D4D;
+				font: bold 1.1em Arial, sans-serif;
+			}
+		.AutoClass{
+			width: 100%;
+			height: 30%;
+			display: flex;
+			flex-direction: row;
+			position: relative;
+		}	
+			.car_1, .car_2, .car_3, .car_4{
+				position: absolute;	
+				top: -16%;
+				width: 8.7vw;
+				height: 4.7vw;
+			}
+			.car_1{				
+				left: 8.5%;
+			}
+			.car_2{				
+				left: 34%;
+			}
+			.car_3{	
+				left: 60%;
+			}
+			.car_4{
+				left: 84.5%;
+			}
+
+			.empty_line{
+				width: 100%;
+				height: 30%;
+				background: #D0D0D0;
+				border-radius: 5px 5px 0 0;
+			}
+			.smallAuto, .middleAuto, .premiumAuto, .truckAuto{
+				width: 24%;
+				height: 55%;
+				background: #EEEEEE;
+				margin-top: 1vw;
+				border-radius: 5px;
+				font: normal 0.85vw Arial, sans-serif;
+				text-align: center;
+				cursor: pointer;
+			}
+			.smallAuto:hover, .middleAuto:hover, .premiumAuto:hover, .truckAuto:hover{
+				background-color: #6EB120;			
+			}
+			.smallAuto:hover .AutoClass_P, .middleAuto:hover .AutoClass_P, .premiumAuto:hover .AutoClass_P, .truckAuto:hover .AutoClass_P{
+				color: #fff;
+			}
+			.middleAuto, .premiumAuto, .truckAuto{
+				margin-left: 2%;
+			}
+			.AutoClass_P{
+				color: #4D4D4D;
+				margin-top: 15px;
+			}
+			.tooltip{
+				width: 25vw;
+				height: 4vw;
+				display: block;
+				position: absolute;
+				top: 50%;
+				background: #F7F7F7;
+				visibility: hidden;
+				border-radius: 0 5px 5px 5px;
+				box-shadow: 0 0 33px rgb(110,177,32);
+				padding: 0.5vw;
+			}
+			.tooltip::before{
+			  content: " ";
+			  position: absolute;
+			  border-bottom: 5px solid #F7F7F7;
+			  border-left: 7px solid transparent;
+			  border-right: 5px solid #F7F7F7;
+			  border-top: 7px solid transparent;
+			  display: block;
+			  left: 10px;
+			  top: -15%; 
+			
+			}
+			.smallAuto:hover .tooltip{
+				transition: all 1s ;
+				visibility: visible;
+				top: 74%;
+				/*opacity: 0.7;*/
+				border-radius: 5px; 
+			}
+			.tooltip p + p{
+				margin-top: 5px;
+				text-align: left;
+			}
+		.tiresDiametr{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			flex-direction: row;
+		}
+			.tiresDiametr .choiceDiametr{
+				margin-top: 10px;
+				color:#4D4D4D;
+				font: bold 1.1em Arial, sans-serif;
+			}
+			.tiresDiametr .container{
+				width: 60%;
+				display: flex;
+				flex-direction: row;
+				text-align: center;
+			}
+			.tiresDiametr .container div{
+				width: 15%;
+				height: 45%;
+				margin: 1% 2%;
+				padding-top: 1%;
+				border: 2px solid  #ccc;
+				font: bold 1.2vw Arial, sans-serif;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+			.tiresDiametr .container div:hover{
+				background: #6EB120;
+				color: #fff;
+				border: 2px solid transparent;
+			}
+		.tiresWH{
+			width: 100%;
+			height: 35%;
+			display: flex;
+			flex-direction: row;
+			border-bottom: 2px solid #6EB120;
+		}
+			.tiresWH .circle{
+				display: flex;
+				flex-direction: column;
+
+			}
+			.tiresWH .circle i{
+				font-size: 5px;
+				margin: 13px 0 0 23px;				
+			}
+			.tiresWH .circle .c1{
+				color: #E6F1D9;
+			}
+			.tiresWH .circle .c2{
+				color: #C5E0A6;
+			}
+			.tiresWH .circle .c3{
+				color: #AAD17D;
+			}
+			.tiresWH .circle .c4{
+				color: #6EB120;
+			}
+			.tiresWH .choiseWH_Tires{
+				margin-top: 10px;
+				color:#4D4D4D;	
+				font: bold 1.1em Arial, sans-serif;			
+			}
+			.tiresWH table{
+				border-spacing: 10px;
+				margin-top: -0.8%;				
+			}
+			.tiresWH table td{
+				border: 2px solid  #ccc;
+				padding: 8px 20px;
+				font: bold 1.2vw Arial, sans-serif;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+			.tiresWH table td:hover{
+				background: #eee;
+				border: 2px solid transparent;
+			}
+			.tiresWH table .single{
+				background-color: #6EB120;
+			}
+
+								 /*TIRES SELECTION END */

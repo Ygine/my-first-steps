@@ -1,0 +1,25 @@
+body{
+	background: #A3EAFF;
+}
+h1{
+	font-size: 35px;
+	margin-left: 25px;
+	border:2px inset white;
+	padding: 5px;
+	background-color:#4EBCF4;
+	width: 1200px
+}
+li,h2,h1{
+	font-family: "Comic Sans MS";
+} 
+.Music {
+	border: 2px solid white ;
+	background-color:#4EBCF4;
+	padding: 5px
+}
+h2{
+	width: 600px;
+}
+p {
+	text-indent: 20px; 
+}

@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*   .gallery {
+    text-align: center; 
+     /*perspective:1000px ; */
+/*    background-color: #aaa;
+    } 
+   .gallery figure { 
+ 	 margin: 0; 
+    display: inline-block; 
+    transform-style: preserve-3d;
+	
+   }
+   .left { 
+    transform-origin:; 
+	   transition: 2s;
+     transform: perspective(2000px) rotateY(-30deg) ; 
+    transform-origin: right center; 
+  }
+   .center {
+    position: relative;
+     z-index: 2;
+
+   }
+   .right {
+    transform: perspective(2000px) rotateY(30deg) ; 
+    transform-origin: left center; 
+   }
+   .gallery img {
+    transition: 2s; 
+   }
+   .gallery img:hover {
+    transform: rotateX(360deg);
+  }*/
+  .gradient0{
+     width: 1380px;
+    height:145px;
+    background-color: #bbb;
+    perspective-origin: center bottom;
+    background: -webkit-repeating-radial-gradient(circle, #aaa 5px, #eee 10px);
+    transform: perspective(425px) rotateX(-35deg);
+    margin-left: 70px;
+     position: absolute;
+     top: -5px;
+    border:4px solid red;
+    border-top: none;
+  }
+  .gradient{
+   width: 155px;
+    height:560px;
+    background-color: #eee;
+    perspective-origin: left center;
+    /*background: url(marge.jpg) 10px 20px  no-repeat, url(gomer.jpg) right bottom  no-repeat, #eee;*/
+    background: -webkit-repeating-radial-gradient(circle, #aaa 15px, #eee 20px);
+    transform: perspective(222px) rotateY(35deg);
+    display: inline-block;
+    float: left;
+ margin-top: 76px;
+
+}
+.div{
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  margin-top: 10px;
+  margin-left: 10px;
+  /*perspective-origin: left center;*/
+}
+.div:hover{
+  background-color: green;
+}
+.gradient1{
+    width: 161px;
+    height:560px;
+    background-color: #aaa;
+     background: -webkit-repeating-linear-gradient( #aaa 40px, #eee 60px,#ccc 80px);
+    transform: perspective(224px) rotateY(-35deg);
+    position: absolute;
+    top: 75px;
+    left: 1371px;
+}
+.gradient2{
+    width: 1267px;
+    height:462px;
+     background-color: #A7E876;
+     margin-top: 131px;
+      float: left;
+      position: absolute;
+      left: 130px;
+      top: -6px;
+      
+}
+    /* 
+    background:-webkit-repeating-radial-gradient(circle, #aaa 210px, #bbb 300px);
+    border-radius: 200px 200px 7000px 7000px;
+  }
+  h1{
+    text-align: center;
+    line-height: 190px;
+    display: block;
+    color: #fff;
+    font-size: 39px;
+    text-shadow: 5px 10px 5px #ccc, -5px -10px 5px #aaa,  -20px 0 5px gold;
+  }*/

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="java-script/main.js"></script>
+  <title>Document</title>
+  <style>
+    html{
+      box-sizing: border-box;
+    }
+    *,
+    *::before,
+    *::after{
+      box-sizing: inherit;
+    }
+    body{
+
+    }
+    .slider{
+      position: relative;
+      width: 700px;
+      height: 400px;
+      margin:  0 auto;
+      background-color: #cee;
+    }
+    .slide-pagination{
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+  .slide-pagination-item{
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background-color: #ccc;
+  }
+  .slide-pagination-active{
+    background-color: red;
+  }
+  .slider-ctrl{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 5px;
+    border: none;
+    background-color: teal;
+    color: #fff;
+    z-index: 1;
+  } 
+  .slider-ctrl-prev{
+    left:0;
+  }
+  .slider-ctrl-next{
+    right: 0;
+  }
+  .slides{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .slides img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover; 
+  }
+  .slides-item{
+    position: relative;
+  }
+  .slides-descr{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    background-color: teal;
+    color: #fff;
+    padding: 5px;
+  }
+  </style>
+</head>
+<body>
+<div class="slider">
+  <button class="slider-ctrl slider-ctrl-prev">prev</button>
+  <button class="slider-ctrl slider-ctrl-next">next</button>
+  <ul class="slides">
+    <li class="slides-item">
+      <img class="slides-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV8ih3MOisOe8uL5meafGovp4tRLkS_-wyW99RKOdjX3a_93PeRA" alt="">
+      <p class="slides-descr">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit.</p>
+    </li>
+  </ul>
+  <div class="slide-pagination">
+    <span class="slide-pagination-item"></span>
+    <span class="slide-pagination-item slide-pagination-active"></span>
+    <span class="slide-pagination-item"></span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!--	<script src='js4/hm4.js'></script>-->
+</head>
+<body>
+	<div class="hedder">
+		
+		<div id="fon" >
+			<div id="okno">
+				<a href="#" class="close">Close</a>
+				
+				<form action="formdata.php" method="post">
+					<h2 align="center">Регистрация</h2>
+					<div class="field">
+					<p><label for="a">Имя:</label>
+						<input type="text" name="name" id="a"></p>
+
+					<p><label for="b">Фамилия:</label>
+						<input type="text" name="last name" id="b"></p>
+
+					<p><label for="c">Пароль:</label>
+						<input type="password" name="password" id="c"></p>
+
+					<p><label for="d">Повторите:</label>
+						<input type="password" name="password" id="d"></p>
+
+					<p><label for="e">Эл.почта:</label>
+						<input type="email" name="email" id="e"></p>
+
+					<p><label for="f">Дата рожд:</label>
+						<input type="date" name="date" id="f"></p>
+
+					<p><label for="g">Цвет:</label>
+						<input type="color" name="color" id="g"></p>
+
+						<p><label for="g">Телефон:</label>
+						<input type="tel" name="tel" id="g" placeholder="+38 (093) 542-66-68"></p>
+
+					<p><label for="h">Выбери номер:</label>
+						<input type="number" name="number" id="h"></p>
+
+
+					<p><label for="j">Курите?:</label>
+						Да<input type="radio" name="smoking" id="j" value="yes">Нет<input type="radio" name="smoking" id="j" value="no"></p>
+					<p align="left">Выберите 1 числo: 
+					3<input type="checkbox" name="1">
+					6<input type="checkbox" name="6">
+					9<input type="checkbox" name="9">
+					</p>
+					</div>
+					<div class="field2">
+						<p><label for="x">Расскажите о себе:</label></p>
+						<p><textarea cols="25" rows="7" id="x">
+							
+						</textarea></p>
+							
+					<p>Выберите язык:<select>
+							<option>HTML</option>
+							<option>CSS</option>
+							<option>JAVA</option>
+							<option>JAVA SCRIPT</option>
+							<option>C++</option>
+							<option>PHP</option>
+							<option>PYTHON</option>
+							<option>C</option>
+						</select></p>
+						<p><input type="image" name="image" id="i" src="13.jpg"></p>
+
+						<input type="reset"></p>
+						</div>
+				</form>				
+			</div>
+		</div>
+ 		<p><a href="#fon" class="registr">Регистрация</a></p>
+	</div>
+
+
+	 <div id="menu">
+	 	
+	 	<div id="sidebar">
+		 	<p>Первый</p>
+		 	<p>Второй</p>
+		 	<p>Третий</p>
+		 	<p>Четвертый</p>
+		 	<p>Пятый</p>
+		 	 
+		</div>
+			<div>
+	 			<img src="images.png" width="62" height="44"  id="img1" >
+	 		</div>
+	 </div>
+	 	<script
+
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  	<script>
+	$(document).ready(function(){
+		$('#img1').click(function(){
+		$('#img1').animate({
+			right: '4px'
+		});	
+			
+			
+		)};
+		
+	)};
+	
+	</script>
+  
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

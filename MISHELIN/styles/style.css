@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	background: #fff;
+
+}
+main{
+	width: 95%;
+	height: 363vh;
+	display: flex;
+	flex-direction: column;
+
+}
+	.advert{
+		max-width: 86%;
+		height: 31.5vw;
+	}	
+		.advertImg{
+			max-width: 100%;
+		}	
+
+	.advantages{
+		width: 1240px;
+		height: 365px;
+		background-color: #ddd;
+	}
+		.advantages h2{
+			text-align: center;
+		}
+	.qusestion{
+		width: 65%;
+		height: 220px;
+		background-color: #aaa;
+	}
+		.qusestion h3{
+			text-align: center;
+		}
+	.footer{
+		width: 1240px;
+		height: 145px;
+		background-color: #aaa;
+	}
+
+main, .advert, .tiresSelection, .tiresProduct, .advantages, .qusestion, footer{
+	margin: 0 auto;
+}
