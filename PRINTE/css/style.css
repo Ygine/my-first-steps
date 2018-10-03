@@ -568,7 +568,7 @@ img {
 .footer-nav-link {
   display: block;
 }
-.glyanec {
+/* .glyanec {
   position: relative;
   display: block;
   font-family: 'Cuprum', sans-serif;
@@ -577,8 +577,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding-left: 20px;
-  /* text-align: center; */
-}
+} */
 .footer-call {
   position: absolute;
   top: 0;
@@ -603,7 +602,7 @@ img {
 .footer-nav-link {
   padding: 5px;
 }
-.glyanec::before {
+/* .glyanec::before {
   position: absolute;
   left: 0;
   /* transform: translateX(-120%); */
@@ -612,7 +611,7 @@ img {
   width: 17px;
   height: 17px;
   background-image: url(../img/imageglyanec.png);
-}
+} */
 /* FOOTER END */
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
