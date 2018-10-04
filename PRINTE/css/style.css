@@ -602,16 +602,17 @@ img {
 .footer-nav-link {
   padding: 5px;
 }
-/* .glyanec::before {
+ /* .glyanec::before {
   position: absolute;
   left: 0;
-  /* transform: translateX(-120%); */
+  transform: translateX(-120%); 
   display: inline-block;
   content: '';
   width: 17px;
   height: 17px;
   background-image: url(../img/imageglyanec.png);
-} */
+}  */
+
 /* FOOTER END */
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
