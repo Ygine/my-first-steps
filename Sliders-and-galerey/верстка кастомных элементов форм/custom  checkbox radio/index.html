@@ -1,104 +1,120 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="java-script/main.js"></script>
-  <title>Document</title>
-  <style>
-    html{
-      box-sizing: border-box;
-    }
-    *,
-    *::before,
-    *::after{
-      box-sizing: inherit;
-    }
-    body{
-      margin: 0;
-      font-family: "Arial", sans-serif;
-      font-size: 16px;
-    }
-    .signup-form{
-      width: 400px;
-      margin: 50px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      background-color: #fff;
-      padding: 10px;
-    }
-    .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden{
-  position: absolute;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="java-script/main.js"></script>
+    <title>Document</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        font-size: 16px;
+      }
+      .signup-form {
+        width: 400px;
+        margin: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        padding: 10px;
+      }
+      .visually-hidden:not(:focus):not(:active),
+      input[type="checkbox"].visually-hidden,
+      input[type="radio"].visually-hidden {
+        position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
 
-  white-space: nowrap;
+        white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-    input{
-      margin: 5px;
-    }
-    .custom-list{
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .custom-list input[type="checkbox"]{
-      border: 2px solid red;
-    }
-    .custom-list label{
-      /* outline: 1px solid red; */
-    }
-    .custom-list label::before{
-      display: inline-block;
-      content: "";
-      border: 2px solid #111;
-      width: 15px;
-      height: 15px;
-      margin-right: 3px;
-      border-radius: 50%;
-
-    }
-    .custom-list input[type="checkbox"]:checked + label::before{
-       background-image: url(https://image.flaticon.com/icons/svg/291/291201.svg);
-       border:none;
-    }
-    textarea{
-      resize: 0;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="containrt">
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+      input {
+        margin: 5px;
+      }
+      .custom-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .custom-list input[type="checkbox"] {
+        border: 2px solid red;
+      }
+      .custom-list label {
+        /* outline: 1px solid red; */
+      }
+      .custom-list label::before {
+        display: inline-block;
+        content: "";
+        border: 2px solid #111;
+        width: 15px;
+        height: 15px;
+        margin-right: 3px;
+        border-radius: 50%;
+      }
+      .custom-list input[type="checkbox"]:checked + label::before {
+        background-image: url(https://image.flaticon.com/icons/svg/291/291201.svg);
+        border: none;
+      }
+      textarea {
+        resize: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containrt">
       <form class="signup-form" action="#" method="get">
-          <section class="radio-test custom">
-            <ul class="custom-list">
-              <li>
-                <input class="visually-hidden" type="checkbox" id="custom-check-1" name="custom-check" value="custom-1">
-                <label for="custom-check-1">custom-chekc-1</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" id="custom-check-2" name="custom-check" value="custom-2">
-                <label for="custom-check-2">custom-chekc-2</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" id="custom-check-3" name="custom-check" value="custom-3">
-                <label for="custom-check-3">custom-chekc-3</label>
-              </li>
-            </ul>
-          </section>
-          <!-- <input type="email" name="email" placeholder="email..." required><br>
+        <section class="radio-test custom">
+          <ul class="custom-list">
+            <li>
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                id="custom-check-1"
+                name="custom-check"
+                value="custom-1"
+              />
+              <label for="custom-check-1">custom-chekc-1</label>
+            </li>
+            <li>
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                id="custom-check-2"
+                name="custom-check"
+                value="custom-2"
+              />
+              <label for="custom-check-2">custom-chekc-2</label>
+            </li>
+            <li>
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                id="custom-check-3"
+                name="custom-check"
+                value="custom-3"
+              />
+              <label for="custom-check-3">custom-chekc-3</label>
+            </li>
+          </ul>
+        </section>
+        <!-- <input type="email" name="email" placeholder="email..." required><br>
           <input type="password" name="password" placeholder="password.." required><br>
           <ul class="checkbox-list">
             <li>
@@ -139,12 +155,11 @@ input[type="radio"].visually-hidden{
             <option value="Vinnitsia">Vinnitsia</option>
             <option value="Moscow" selected>Moscow</option>
           </select>
-        </section> -->
+        </section>
 
           <button type="submit">submit</button>
-          <button type="reset">reset</button>
-        </form>
-  </div>
-
-</body>
+          <button type="reset">reset</button> -->
+      </form>
+    </div>
+  </body>
 </html>

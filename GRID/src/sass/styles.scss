@@ -1,0 +1,23 @@
+@charset 'utf-8';
+//utilits
+@import "./base/normalize";
+@import "./base/fonts";
+@import "./utils/variables";
+@import "./utils/mixin";
+
+//base
+@import "./base/base";
+@import "./utils/placeholders";
+
+//layout
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+//conponents
+@import "./conponents/gamburger";
+@import "./conponents/left-menu";
+@import "./conponents/media";
+@import "./conponents/slider";
+@import "./conponents/search";
+@import "./conponents/products";

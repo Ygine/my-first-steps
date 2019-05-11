@@ -1,0 +1,91 @@
+.my-slider{
+    background: url(../images/slider-background.png) no-repeat center center/cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.slide-content-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    @include respondTo(tablet){
+        flex-direction: row;
+    }
+}
+
+.my-slider .slick-prev,
+ .my-slider .slick-next{
+    display: none ;
+
+    @include respondTo(smallScreen){
+        display: block;
+        
+    }
+ }
+
+.my-slider .slick-prev{
+    @include respondTo(smallScreen){
+        left: 0;
+    }
+}
+
+ .my-slider .slick-next{
+    @include respondTo(smallScreen){
+       right: 0;
+    }
+}
+
+.slide-item_descr{
+    max-width: 430px;
+
+    @include respondTo(tablet){
+        margin-right: 30px
+    }
+}
+
+.slide-item_title{
+    @include font(500, 40px, 40px)
+    margin-bottom: 15px;
+}
+
+.slide-item_text{
+    @include font(400, 16px, 20px)
+    margin-bottom: 15px
+}
+
+.slide-img{
+    position: relative;
+    display: inline-block;
+}
+
+.slide-img img{
+    border-radius: 50%;
+}
+
+.item-price{
+    position: absolute;
+    top: 70%;
+    right:0;
+    z-index: 22222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+    border: 2px solid $color-green;
+    background: url(../images/slider-background.png) no-repeat center center/cover;
+}
+
+ .product-price-slider{
+   @extend %currency;
+}
+

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.906" height="29.69" viewBox="0 0 25.906 29.69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333435;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="333.938" y="2214.31" width="25.906" height="29.69" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.75"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="333.938" y="2214.31" width="25.906" height="28.69" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjUuOTA2IiBoZWlnaHQ9IjI4LjY5IiB2aWV3Qm94PSIwIDAgMjUuOTA2IDI4LjY5Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjEyLjk1MyIgeTE9IjI4LjY5IiB4Mj0iMTIuOTUzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzQxMmQ0MSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2ZTRiNmUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjI1LjkwNiIgaGVpZ2h0PSIyOC42OSIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+      <feGaussianBlur result="blur-2" stdDeviation="1.414" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#201820"/>
+      <feComposite result="composite-3" operator="out" in2="blur-2"/>
+      <feOffset result="offset-2" dy="1"/>
+      <feComposite result="composite-4" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-3" mode="multiply" in2="blend-2"/>
+    </filter>
+  </defs>
+  <path id="icon" class="cls-1" d="M345.856,2214.62a3.014,3.014,0,0,0-1.252.35,7.949,7.949,0,0,0-1.363.2c-1.46.28-1.977,2.16-2.046,2.86a34.634,34.634,0,0,0-.041,3.54c0.14,0.63-.348.63-0.348,0.63-0.875-.06-0.481,2.67-0.481,2.67,0.126,0.67-.045,1.01,1.251,1.53a5.325,5.325,0,0,0,2.188,2.64s0.078,1.13.1,1.93c-0.132-.06.422,2.06-3.605,2.65s-4.8,1.9-5.556,2.63-0.776,4-.776,4h25.929s-0.09-3.28-.85-4-1.586-2.03-5.612-2.63-3.313-2.65-3.34-2.78c0.007-.31.148-1.66,0.148-1.66a7.123,7.123,0,0,0,1.914-2.84c0.971-.61,1.341-0.69,1.5-1.4,0,0,.328-2.67-0.716-2.67,0,0-.435.07-0.295-0.56a15.7,15.7,0,0,0,.023-3.13c-0.07-.69.133-2.68-1.328-2.96a6.761,6.761,0,0,0-1.6.03c-0.487-.07-1.067-1.33-1.971-1.33Zm-0.2,16.79a0.628,0.628,0,0,0,.673.83H347.3a2.05,2.05,0,0,1,.6-0.98l1.495,6.36-2.168,5.38h-0.673l-2.018-5.38Z" transform="translate(-333.938 -2214.31)"/>
+</svg>

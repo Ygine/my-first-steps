@@ -1,0 +1,46 @@
+.left-menu_bag .bag-amount{
+    color: $color-dark;
+}
+
+.hamburger-sign .menu-item:first-child{
+    margin-right: 15px;
+}
+
+.left-menu_top-block{
+    padding: 25px;
+    background-color: rgba($color-blue, 0.4);
+}
+
+
+.left-menu_title{
+    background-color: rgba($color-red, 0.4);
+    @include font(500, 15px, 1.2);
+    padding: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.left-menu-item{
+    padding-left: 15px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    border-right: 3px solid transparent;
+    background-color: #eee;
+}
+
+.left-menu-item::before{
+  @include triangle(right, 8px, $color-yellow);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-menu-item:hover{
+    background-color: #fff;
+    border-right: 3px solid rgba($color-red, 0.4);
+}
+
+.left-menu_link{
+    display: block;
+    padding: 12px 20px;
+    color: #000;
+}

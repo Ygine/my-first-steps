@@ -1,49 +1,113 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="java-script/main.js"></script>
-  <title>Document</title>
-  <style>
-    body{
-      min-height: 100vh;
-      margin: 0;
-    }
-    .modal-backdrop{
-      position: fixed;
-      top:0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color:rgba(100,200,200, 0.3);
-    }
-    .modal{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px;
-      height: 200px;
-      background-color: #eee;
-    }
-  </style>
-</head>
-<body>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur magnam corrupti rem ad perspiciatis quia atque beatae sequi dolores, laboriosam eum ea omnis ut repudiandae. Distinctio necessitatibus laborum iste?
-  <div class="modal-backdrop">
-  <div class="modal">
-    <p>Вы действительно хотите выйти из аккаунта?</p>
-    <button>Yes</button>
-    <button>NO</button>
-  </div>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="java-script/main.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .backdrop {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 222;
+      }
+      .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-<script>
+        width: 300px;
+        padding: 30px 10px;
+        background-color: #ccc;
+      }
 
-</script>
+      .open {
+        padding: 10px;
+      }
 
-</body>
+      .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 3px 8px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #fff;
+      }
+      .close:hover {
+        color: blue;
+      }
+
+      body.show-modal .backdrop {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="open" data-action="open-modal">open modal</button>
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2 class="title">Modal title</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa
+          quod, iusto labore itaque alias vitae possimus doloribus vel, voluptas
+          mollitia, debitis quia est praesentium consequatur suscipit aut.
+          Perspiciatis, vero?
+        </p>
+        <button class="close" data-action="close-modal">X</button>
+      </div>
+    </div>
+    <script>
+      const refs = {
+        openModalButton: document.querySelector('[data-action="open-modal"]'),
+        closeModalButton: document.querySelector('[data-action="close-modal"]'),
+        backdrop: document.querySelector(".js-backdrop"),
+        body: document.body
+      };
+
+      const ShowModal = () => {
+        refs.body.classList.add("show-modal");
+        window.addEventListener("keydown", hendleKeyPress);
+      };
+
+      const CloseModal = () => {
+        refs.body.classList.remove("show-modal");
+
+        window.removeEventListener("keydown", hendleKeyPress);
+      };
+
+      const hendleKeyPress = e => {
+        if (e.code !== "Escape") {
+          return;
+        }
+        CloseModal();
+      };
+
+      const hendleBackdropClick = ({ target, currentTarget }) => {
+        if (target !== currentTarget) {
+          return;
+        }
+        refs.body.classList.remove("show-modal");
+      };
+
+      refs.backdrop.addEventListener("click", hendleBackdropClick);
+      refs.openModalButton.addEventListener("click", ShowModal);
+      refs.closeModalButton.addEventListener("click", CloseModal);
+    </script>
+  </body>
 </html>

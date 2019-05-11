@@ -1,0 +1,97 @@
+.search-section{
+  background-color: #cee;
+}
+.search-container{
+  display: flex;
+  padding: 5px;
+}
+
+.search-desc{
+  display: none;
+  text-transform: uppercase;
+  color: $color-red;
+  margin-right: 15px;
+  font-weight: 500;
+
+  @include respondTo(smartphone){
+   display: block;
+  }
+}
+
+.search-icon{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color:red;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+}
+
+.svg{
+  height: 20px;
+  width: 20px;
+  fill: #fff;
+}
+
+.search-form {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.search-form__input {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.35);
+  width: 220px;
+  font: inherit;
+  border: 0;
+  padding: 8px 32px 8px 8px;
+  color: $color-blue;
+  transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  outline: none;
+  box-shadow: 2px 3px 3px -3px rgba(0,0,0,0.75), -1px -1px 3px -3px rgba(0,0,0,0.75);
+}
+
+.search-form__input:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.search-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+// product-view
+.product-view{
+  display: flex;
+  margin-left: auto;
+  padding: 5px;
+
+  &_item{
+    margin-right: 10px;
+  }
+
+  &_button{
+    cursor: pointer;
+  }
+
+  &_button:focus,
+  &_button:hover{
+    outline: none;
+  }
+
+  .view-1, .view-2{
+    width: 25px;
+    height: 20px;
+  }
+
+  .view-1{
+    background: url(../images/icons/view-1.png) no-repeat center/cover ;
+  }
+  .view-2{
+    background: url(../images/icons/view-2.png) no-repeat center/cover ;
+  }
+
+}
