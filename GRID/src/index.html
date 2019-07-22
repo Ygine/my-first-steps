@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>FESHION-PRESS</title>
-</head>
+
+</head> 
 
 <body>
     <div class="hamburger-overlay">
@@ -19,7 +20,7 @@
             <div class="left-menu_top-block">
                 <ul class="hamburger-sign">
                   <li class="menu-item">
-                    <a href="#" class="sign-link">Join</a>
+                    <a href="#" data-action="open-modal" class="sign-link">Join</a>
                   </li>
                   <li class="menu-item">
                     <a href="#" class="sign-link">Sign in</a>
@@ -67,11 +68,14 @@
         <div class="container top-block">
           <div>
             <a href="#" class="logo">fashion<span>press</span></a> 
+            <!-- <progress class="progress" max="100" value="100">
+              Загружено на <span id="value">25</span>%
+            </progress> -->
           </div>   
-          <div class="sign-block">
+
               <ul class="sign-menu">
                 <li class="sign-menu-item">
-                  <a href="#" class="sign-link">Join</a>
+                  <a href="#" class="sign-link" data-action="open-modal">Join</a>
                 </li>
                 <li class="sign-menu-item">
                   <a href="#" class="sign-link">Sign in</a>
@@ -84,7 +88,7 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            
           <button class="hamburger hamburger--collapse" type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
@@ -117,7 +121,6 @@
           </ul>
         </nav>
     </header> 
-
     <section class="my-slider">
         <div class="slider-list container">
             <div class="slide-item">
@@ -170,8 +173,8 @@
       <div class="search-wrap container">
         <div class="container search-container">
           <form class="search-form">
-            <p class="search-desc">Search product</p>
-              <input
+            <label for="search-desc" class="search-desc">Search product</label>
+              <input id="search-desc"
                 type="text"
                 class="search-form__input"
               />
@@ -383,7 +386,7 @@
       <section class="footer-widgets-wrap ">
         <div class="footer-widgets container">
           <div class="widget about-widget">
-            <div><h3 class="about-widget-title ">About <span class="bottom-line"></span></h3></div>
+            <div><h3 class="about-widget-title">About <span class="bottom-line"></span></h3></div>
             <a href="#" class="logo">fashion<span>press</span></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               Phasellus sollicitudin sem nec leo tempus fermentum. 
@@ -454,6 +457,29 @@
       </section>
     </footer>
 
+    <div class="modal modal-hidden js-modal-backdrop">
+      <div class="modal-content">
+        <div class="close-btn" data-action="close-modal"></div>
+        <h2 class="modal-title">join the fashion press</h2>
+        <p class="modal-text">
+          Subscribe to the <span class="modal_logo">FASHION<span>PRESS</span></span> mailing list to receive updates on new
+          arrivals, special offers and other discount information.
+        </p>
+        <form class="sub-form" action="#">
+          <input
+            class="sub-form-input"
+            type="text"
+            placeholder="Your Name Heare"
+          />
+          <input
+            class="sub-form-input"
+            type="text"
+            placeholder="Your Email Here"
+          />
+          <button class="sub-form-btn">Join</button>
+        </form>
+      </div>
+    </div>
 </body>
 
 </html>

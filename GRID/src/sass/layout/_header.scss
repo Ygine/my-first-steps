@@ -22,12 +22,11 @@
 }
 
 .sign-menu{
-    display: grid;
     grid-template-columns: 1fr;
     grid-auto-flow: column;
     text-align: center;
-    height: 100%;
-
+    padding: 2px;
+    
     &-item{
         background-color: $color-lightgrey;
         display: flex;
@@ -36,7 +35,6 @@
 
     &-item:last-child svg{
        vertical-align: middle;
-       margin-bottom: 5px;
     }
 
     &-item:not(:last-child){
@@ -45,7 +43,7 @@
 
     .sign-link{
         display: block;
-        padding: 20px;
+        padding: 18px;
         @include font(500, 14px, 1.2);
         color: $color-dark;
 
@@ -84,23 +82,3 @@
         color: $color-red;
     }
 }
-
-// .user-nav {
-//   @extend %head-nav;
-
-//   &__item:not(:last-child) {
-//     margin-right: 40px;
-//   }
-
-//   &__icon:hover {
-//     fill: $link-hover;
-//   }
-// }
-
-// .price {
-//   @extend %currency;
-
-//   @include respondTo(smartphone) {
-//     background-color: hsl(130, 80%, 50%);
-//   }
-// }

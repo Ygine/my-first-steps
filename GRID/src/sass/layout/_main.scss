@@ -1,12 +1,18 @@
 .main-content{
     display: grid;
-    grid-template-columns: minmax(250px, 250px) 1fr;
+    grid-template-columns: 1fr;
     grid-auto-rows: min-content;
     padding-top: 10px;
+
+    @include respondTo(tablet){
+        grid-template-columns: minmax(250px, 250px) 1fr;
+    }
 }
 
-.left-container{
-    border-right: 1px solid #ccc;
+.left-container{   
+    @include respondTo(tablet){
+        border-right: 1px solid #ccc;
+    }
 }
 
 .product-menu{
