@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="My_js.js"></script>
+  <title>Document</title>
+  <style>
+.filter-form {
+  width: 294px;
+  padding: 0 16px;
+}
+
+.size-filter-title {
+  color: #2a2a2a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 38px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.size-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.size-filter-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.size-filter-label::before {
+  display: inline-block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDgg%0D%0ANTEyIj48cGF0aCBkPSJNNDAwIDMySDQ4QzIxLjUgMzIgMCA1My41IDAgODB2MzUyYzAgMjYuNSAy%0D%0AMS41IDQ4IDQ4IDQ4aDM1MmMyNi41IDAgNDgtMjEuNSA0OC00OFY4MGMwLTI2LjUtMjEuNS00OC00%0D%0AOC00OHptLTYgNDAwSDU0Yy0zLjMgMC02LTIuNy02LTZWODZjMC0zLjMgMi43LTYgNi02aDM0MGMz%0D%0ALjMgMCA2IDIuNyA2IDZ2MzQwYzAgMy4zLTIuNyA2LTYgNnoiIGZpbGw9IiMyYTJhMmEiLz48L3N2%0D%0AZz4=');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.size-filter-item-size {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+.size-filter-item-count {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-left: auto;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 23px;
+}
+
+.size-filter-check:checked + .size-filter-label {
+  padding-left: 12px;
+}
+
+.size-filter-check:checked + .size-filter-label::before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDgg%0D%0ANTEyIj48cGF0aCBkPSJNNDAwIDQ4MEg0OGMtMjYuNTEgMC00OC0yMS40OS00OC00OFY4MGMwLTI2%0D%0ALjUxIDIxLjQ5LTQ4IDQ4LTQ4aDM1MmMyNi41MSAwIDQ4IDIxLjQ5IDQ4IDQ4djM1MmMwIDI2LjUx%0D%0ALTIxLjQ5IDQ4LTQ4IDQ4em0tMjA0LjY4Ni05OC4wNTlsMTg0LTE4NGM2LjI0OC02LjI0OCA2LjI0%0D%0AOC0xNi4zNzkgMC0yMi42MjdsLTIyLjYyNy0yMi42MjdjLTYuMjQ4LTYuMjQ4LTE2LjM3OS02LjI0%0D%0AOS0yMi42MjggMEwxODQgMzAyLjc0NWwtNzAuMDU5LTcwLjA1OWMtNi4yNDgtNi4yNDgtMTYuMzc5%0D%0ALTYuMjQ4LTIyLjYyOCAwbC0yMi42MjcgMjIuNjI3Yy02LjI0OCA2LjI0OC02LjI0OCAxNi4zNzkg%0D%0AMCAyMi42MjdsMTA0IDEwNGM2LjI0OSA2LjI1IDE2LjM3OSA2LjI1IDIyLjYyOC4wMDF6IiBmaWxs%0D%0APSIjZDU4ZTMyIi8+PC9zdmc+');
+}
+
+.size-filter-check:checked + .size-filter-label .size-filter-item-size {
+  color: #d58e32;
+}
+
+.size-filter-check:checked + .size-filter-label .size-filter-item-count {
+  background-color: #d58e32;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+  </style>
+</head>
+<body>
+  <!-- FILTER FORM -->
+  <form class="filter-form">
+      <section class="size-filter">
+        <h2 class="size-filter-title">Filter By Size</h2>
+  
+        <ul class="size-filter-list">
+          <li class="size-filter-item">
+            <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+              value="small" id="size-s">
+            <label for="size-s" class="size-filter-label">
+              <span class="size-filter-item-size">s</span>
+              <span class="size-filter-item-count">3</span>
+            </label>
+          </li>
+          <li class="size-filter-item">
+            <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+              value="medium" id="size-m">
+            <label for="size-m" class="size-filter-label">
+              <span class="size-filter-item-size">m</span>
+              <span class="size-filter-item-count">4</span>
+            </label>
+          </li>
+          <li class="size-filter-item">
+            <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+              value="large" id="size-l">
+            <label for="size-l" class="size-filter-label">
+              <span class="size-filter-item-size">l</span>
+              <span class="size-filter-item-count">5</span>
+            </label>
+          </li>
+          <li class="size-filter-item">
+            <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+              value="x-large" id="size-xl">
+            <label for="size-xl" class="size-filter-label">
+              <span class="size-filter-item-size">xl</span>
+              <span class="size-filter-item-count">6</span>
+            </label>
+          </li>
+          <li class="size-filter-item">
+            <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+              value="xx-large" id="size-xx">
+            <label for="size-xx" class="size-filter-label">
+              <span class="size-filter-item-size">xx</span>
+              <span class="size-filter-item-count">5</span>
+            </label>
+          </li>
+        </ul>
+      </section>
+    </form>
+</body>
+</html>
+

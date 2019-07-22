@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>DROP</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <style>
+      .filelist {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-gap: 15px;
+        margin: 20px;
+      }
+    
+      .filelist li {
+        width: 80px;
+        height: 80px;
+      }
+    
+      .filelist li span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-weight: 600;
+        background: #fff;
+        cursor: pointer;
+      }
+    
+      .drop_zone {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border: 1px dotted red;
+      }
+    
+      .drop_zone .file {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+    </style>
+</head>
+
+
+<body>
+
+  <div class="drop_zone">
+    <input class="file" type="file" multiple accept='image/*'>
+    Drop files here</div>
+  <ul class="filelist"></ul>
+
+  <script>
+    const handleFiles = (e) => {
+      const files = e.target.files;
+      fileReader(files);
+    }
+
+    function handleDragOver(evt) {
+      evt.stopPropagation();
+      evt.preventDefault();
+      evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+    }
+
+    const fileReader = (files) => {
+      for (var i = 0; i < files.length; i++) {
+        const file = files[i];
+
+        const reader = new FileReader();
+        reader.onload = (function (e) {
+          const temp = `<li><img src="${e.target.result}"><span class="close">X</span></li>`;
+          $('.filelist').append(temp);
+          $('.close').click(function () {
+            $('.close').parent('li').remove();
+          })
+        });
+
+        reader.readAsDataURL(file);
+      }
+    }
+
+    // Setup the dnd listeners.
+    $('.file').on('change', handleFiles);
+    $('.drop_zone').on('dragover', handleDragOver, false);
+  </script>
+
+</body>
+
+</html>

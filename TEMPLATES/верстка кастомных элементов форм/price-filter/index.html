@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="main.js"></script>
+  <title>Document</title>
+  <style>
+
+    html{
+      box-sizing: border-box;
+    }
+    *,
+    *::before,
+    *::after{
+      box-sizing: inherit;
+    }
+    body{
+      font: 16px "Arial", sans-serif;
+      color: #aaa;
+    }
+    .price-filter{
+      width: 240px;
+      margin: 50px auto;
+    }
+    .range-controls{
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      margin-bottom: 15px;
+      padding: 0 20px;
+      border-radius: 3px;
+      overflow: hidden;
+      background-color: #eee;
+    }
+      .scale{
+        flex: 0 0 100%;
+        height: 3px;
+        background-color: #ccc;
+      }
+        .bar{
+          height: 3px;
+          background-color:palevioletred;
+        }
+      .range-toggle{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 8px solid #ffffff;
+        background-color: #aaa;
+        box-shadow: 0 2px 1px #cfcfcf;
+        cursor: pointer;
+      }
+      .range-toggle-min{
+        left: 20px;
+      }
+      .range-toggle-max{
+      left: 150px;
+      }
+
+    .price-controls{
+      display: flex;
+      justify-content: space-between;
+    }
+    .price-controls label{
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+    }
+    .price-controls input{
+      display: inline-block;
+      width: 80px;
+      padding: 8px 10px;
+      margin-left: 5px;
+      border: none;
+      background-color: #cee;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      color: #777;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="price-filter">
+    <div class="range-controls">
+      <div class="scale">
+        <div class="bar" style="width: 70%;"></div>
+      </div>
+      <div class="range-toggle range-toggle-min"></div>
+      <div class="range-toggle range-toggle-max"></div>
+    </div>
+    <div class="price-controls">
+      <label class="min-price">
+        от
+        <input type="text" value="1000" name="min-price">
+      </label>
+      <label class="max-price">
+        до
+        <input type="text" value="10 000" name="max-price">
+      </label>
+    </div>
+  </div>
+<script>
+
+</script>
+</body>
+</html>
+
+<!-- .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} -->

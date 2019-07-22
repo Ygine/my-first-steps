@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="java-script/main.js"></script>
+  <title>Document</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      font-size: 16px;
+    }
+
+    .signup-form {
+      width: 400px;
+      margin: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    .visually-hidden:not(:focus):not(:active),
+    input[type="checkbox"].visually-hidden,
+    input[type="radio"].visually-hidden {
+      position: absolute;
+
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+
+      white-space: nowrap;
+
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+
+    input {
+      margin: 5px;
+    }
+
+    .custom-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .custom-list input[type="checkbox"] {
+      border: 2px solid red;
+    }
+
+    .custom-list label {
+      /* outline: 1px solid red; */
+    }
+
+    .custom-list label::before {
+      display: inline-block;
+      content: "";
+      border: 2px solid #111;
+      width: 15px;
+      height: 15px;
+      margin-right: 3px;
+      border-radius: 50%;
+    }
+
+    .custom-list input[type="checkbox"]:checked+label::before {
+      background-image: url(https://image.flaticon.com/icons/svg/291/291201.svg);
+      border: none;
+    }
+
+    textarea {
+      resize: 0;
+    }
+
+    /* input */
+    .brig-cont-bgr .cb__class {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .brig-cont-bgr #lb_producer {
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 10px;
+      line-height: 36px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .brig-cont-bgr #lb_producer::before {
+      content: " ";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #ffd24c;
+      border-radius: 4px;
+      z-index: -1;
+    }
+
+    .brig-cont-bgr input[type="radio"]+#lb_producer::before {
+      border-radius: 18px;
+    }
+
+    /* Checked */
+    .brig-cont-bgr input[type="checkbox"]:checked+#lb_producer,
+    .brig-cont-bgr input[type="radio"]:checked+#lb_producer {
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #fff;
+    }
+
+    .brig-cont-bgr input[type="checkbox"]:checked+#lb_producer::before,
+    .brig-cont-bgr input[type="radio"]:checked+#lb_producer::before {
+      top: 5px;
+      width: 100%;
+      height: 80%;
+      background: #ffd24c;
+    }
+
+    .brig-cont-bgr #lb_producer,
+    .brig-cont-bgr #lb_producer::before {
+      -webkit-transition: .25s all ease;
+      -o-transition: .25s all ease;
+      transition: .25s all ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="containrt">
+    <form class="signup-form" action="#" method="get">
+      <section class="radio-test custom">
+        <ul class="custom-list">
+          <li>
+            <input class="visually-hidden" type="checkbox" id="custom-check-1"
+              name="custom-check" value="custom-1" />
+            <label for="custom-check-1">custom-chekc-1</label>
+          </li>
+          <li>
+            <input class="visually-hidden" type="checkbox" id="custom-check-2"
+              name="custom-check" value="custom-2" />
+            <label for="custom-check-2">custom-chekc-2</label>
+          </li>
+          <li>
+            <input class="visually-hidden" type="checkbox" id="custom-check-3"
+              name="custom-check" value="custom-3" />
+            <label for="custom-check-3">custom-chekc-3</label>
+          </li>
+        </ul>
+      </section>
+    </form>
+    <section class="brig-cont-bgr">
+      <div class="col-md-9" id="producer_name">
+        <p class="text-left ml-1"><small>Провайдеры</small></p>
+        <?php $cb_counter = 1; ?>
+        <input type="checkbox" data-produser-id="all-games"
+          id="producer-all-games" name="cb0" class="cb__class" checked>
+        <label id="lb_producer" for="producer-all-games">Все</label>
+
+        <?php foreach ($list['producer_name'] as $id => $name): ?>
+        <!--            <span class="-->
+        <?//= UserManager::hidePopularProvider($key) ? 'd-none' : ''; ?>
+        <!--">-->
+        <input class="cb__class provider-js" id="<?= 'cb' . $cb_counter?>"
+          type="checkbox" name="cb" data-producer-id="<?= $id ?>">
+
+        <label id="lb_producer" for="<?= 'cb' . $cb_counter?>"
+          data-package="<?= $key ?>" data-producer="<?= $id ?>"><?= $name ?>
+        </label>
+        <?php $cb_counter++; ?>
+        <?php endforeach; ?>
+
+      </div>
+    </section>
+  </div>
+  <script>
+
+    $games = $(".game-block");
+
+    $filterNotes = function (query, array) {
+      $filterGames = [];
+
+      for (i = 0; i < array.length; i += 1) {
+        $gameDataName = array[i].dataset.gamename.toLowerCase();
+
+        if ($gameDataName.includes(query)) {
+          $filterGames.push(array[i]);
+        }
+      }
+      return $filterGames;
+    }
+
+    $(".search-input-js").keyup(function () {
+      $val = $(this).val().toLowerCase();
+      $gamesFilter = $filterNotes($val, $games);
+
+      $('#game-container').html('').append($gamesFilter);
+
+    });
+
+    $(".search-input-js").blur(function () {
+      $('#game-container').html('').append($games);
+      $(".search-input-js").val('');
+    })
+
+    $('.provider-js').each(function (id, item) {
+      item.addEventListener('change', filterGamesByProduserId)
+    })
+    $filteredSomething = false;
+
+    function filteredGames(producerId, games) {
+      $filterGames = [];
+      for (i = 0; i < games.length; i += 1) {
+        $id = games[i].dataset.producerId;
+        if ($id === producerId) {
+          $filterGames.push($games[i]);
+        }
+      }
+      return $filterGames;
+    }
+
+    function filterGamesByProduserId() {
+      if (this.checked) {
+        $producerId = $(this).attr('data-producer-id');
+        $filterGames = filteredGames($producerId, $games);
+        if (!$filteredSomething) {
+          $('#game-container').html('').append($filterGames);
+          $filteredSomething = true;
+          $('input[name="cb0"]').prop("checked", false);
+        } else {
+          $('#game-container').append($filterGames);
+        }
+      } else {
+        const elements = $('input.provider-js:checked');
+        if (elements.length === 0) {
+          $('input[name="cb0"]').prop("checked", true);
+          $('#game-container').html('').append($games);
+          $filteredSomething = false;
+        } else {
+          $filterGames2 = [];
+          for (var i = 0; i < elements.length; i++) {
+            $producerId = elements[i].dataset.producerId;
+            $filterGames2.push(...filteredGames($producerId, $games))
+          }
+          $('#game-container').html('').append($filterGames2);
+        }
+      }
+    }
+
+  </script>
+</body>
+
+</html>
